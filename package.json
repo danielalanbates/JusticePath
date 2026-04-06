@@ -1,0 +1,27 @@
+{
+  "name": "justicepath",
+  "version": "0.1.0",
+  "description": "Rehabilitation & Innocence Support Platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "justice",
+    "legal-aid",
+    "rehabilitation",
+    "reentry",
+    "innocence",
+    "criminal-justice-reform"
+  ],
+  "author": "Bates LLC",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
