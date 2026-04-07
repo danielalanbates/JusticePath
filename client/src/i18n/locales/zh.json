@@ -1,0 +1,128 @@
+{
+  "app": {
+    "name": "JusticePath",
+    "tagline": "康复与清白支持平台",
+    "welcome": "欢迎使用 JusticePath",
+    "welcomeDesc": "您在司法系统中的指南 —— 无论您是努力康复、证明清白，还是在服刑后重建生活。"
+  },
+  "nav": {
+    "home": "首页",
+    "caseTracker": "案件追踪",
+    "legalSupport": "法律支持",
+    "rehabilitation": "康复路径",
+    "innocence": "清白支持",
+    "reentry": "重返社会支持",
+    "community": "社区",
+    "settings": "设置"
+  },
+  "home": {
+    "getStarted": "开始使用",
+    "quickActions": "快捷操作",
+    "checkCaseStatus": "查看案件状态",
+    "findLegalHelp": "寻找法律帮助",
+    "startRehabPlan": "开始康复计划",
+    "reportEvidence": "报告证据",
+    "findHousing": "寻找住房",
+    "joinCommunity": "加入社区"
+  },
+  "caseTracker": {
+    "title": "案件追踪",
+    "status": "案件状态",
+    "nextCourtDate": "下次开庭日期",
+    "documents": "文件",
+    "timeline": "时间线",
+    "addDocument": "添加文件",
+    "addReminder": "添加提醒",
+    "noCases": "尚未追踪任何案件",
+    "addFirstCase": "添加您的第一个案件"
+  },
+  "legalSupport": {
+    "title": "法律支持",
+    "askQuestion": "提出法律问题",
+    "findLawyer": "寻找律师",
+    "templates": "文件模板",
+    "knowYourRights": "了解您的权利",
+    "searchPlaceholder": "描述您的法律问题...",
+    "categories": {
+      "appeals": "上诉",
+      "expungement": "犯罪记录清除",
+      "sentencing": "量刑",
+      "probation": "缓刑",
+      "parole": "假释",
+      "civilRights": "公民权利"
+    }
+  },
+  "rehabilitation": {
+    "title": "康复路径",
+    "planBuilder": "计划构建器",
+    "education": "教育与培训",
+    "mentalHealth": "心理健康资源",
+    "substanceAbuse": "药物滥用项目",
+    "communityService": "社区服务时长",
+    "progress": "您的进度",
+    "startPlan": "开始您的计划",
+    "addCourse": "添加课程或项目"
+  },
+  "innocence": {
+    "title": "清白支持",
+    "evidenceLog": "证据整理器",
+    "witnessStatements": "证人陈述",
+    "innocenceProjects": "清白项目目录",
+    "dnaTesting": "DNA检测资源",
+    "appealPathway": "上诉路径构建器",
+    "addEvidence": "添加证据",
+    "addWitness": "添加证人陈述",
+    "contactProject": "联系清白项目"
+  },
+  "reentry": {
+    "title": "重返社会支持",
+    "housing": "住房资源",
+    "employment": "就业资源",
+    "idReplacement": "身份证件补办",
+    "benefits": "福利登记",
+    "financialLiteracy": "金融知识",
+    "findHousing": "在您附近寻找住房",
+    "jobSearch": "搜索工作",
+    "applyBenefits": "申请福利"
+  },
+  "community": {
+    "title": "社区与导师",
+    "forums": "同伴支持论坛",
+    "mentorMatching": "导师匹配",
+    "familySupport": "家庭支持",
+    "counseling": "咨询目录",
+    "joinForum": "加入论坛",
+    "findMentor": "寻找导师",
+    "becomeMentor": "成为导师"
+  },
+  "settings": {
+    "title": "设置",
+    "language": "语言",
+    "languageDesc": "选择您的首选语言",
+    "privacy": "隐私与安全",
+    "notifications": "通知",
+    "account": "账户",
+    "darkMode": "深色模式",
+    "exportData": "导出我的数据",
+    "deleteData": "删除我的数据"
+  },
+  "common": {
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "add": "添加",
+    "search": "搜索",
+    "loading": "加载中...",
+    "error": "出了点问题",
+    "retry": "重试",
+    "back": "返回",
+    "next": "下一步",
+    "submit": "提交",
+    "close": "关闭",
+    "yes": "是",
+    "no": "否",
+    "required": "必填",
+    "optional": "可选"
+  }
+}

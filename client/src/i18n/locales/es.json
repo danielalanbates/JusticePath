@@ -1,0 +1,128 @@
+{
+  "app": {
+    "name": "JusticePath",
+    "tagline": "Plataforma de Rehabilitación e Inocencia",
+    "welcome": "Bienvenido a JusticePath",
+    "welcomeDesc": "Tu guía a través del sistema de justicia — ya sea que trabajes hacia la rehabilitación, pruebes inocencia, o reconstruyas después del encarcelamiento."
+  },
+  "nav": {
+    "home": "Inicio",
+    "caseTracker": "Seguimiento de Casos",
+    "legalSupport": "Apoyo Legal",
+    "rehabilitation": "Rehabilitación",
+    "innocence": "Apoyo de Inocencia",
+    "reentry": "Apoyo de Reingreso",
+    "community": "Comunidad",
+    "settings": "Configuración"
+  },
+  "home": {
+    "getStarted": "Comenzar",
+    "quickActions": "Acciones Rápidas",
+    "checkCaseStatus": "Verificar Estado del Caso",
+    "findLegalHelp": "Buscar Ayuda Legal",
+    "startRehabPlan": "Iniciar Plan de Rehab",
+    "reportEvidence": "Reportar Evidencia",
+    "findHousing": "Buscar Vivienda",
+    "joinCommunity": "Unirse a la Comunidad"
+  },
+  "caseTracker": {
+    "title": "Seguimiento de Casos",
+    "status": "Estado del Caso",
+    "nextCourtDate": "Próxima Fecha de Corte",
+    "documents": "Documentos",
+    "timeline": "Línea de Tiempo",
+    "addDocument": "Agregar Documento",
+    "addReminder": "Agregar Recordatorio",
+    "noCases": "Aún no hay casos rastreados",
+    "addFirstCase": "Agrega tu primer caso"
+  },
+  "legalSupport": {
+    "title": "Apoyo Legal",
+    "askQuestion": "Haz una Pregunta Legal",
+    "findLawyer": "Buscar un Abogado",
+    "templates": "Plantillas de Documentos",
+    "knowYourRights": "Conoce Tus Derechos",
+    "searchPlaceholder": "Describe tu pregunta legal...",
+    "categories": {
+      "appeals": "Apelaciones",
+      "expungement": "Cancelación de Antecedentes",
+      "sentencing": "Sentencia",
+      "probation": "Libertad Condicional",
+      "parole": "Libertad Condicional",
+      "civilRights": "Derechos Civiles"
+    }
+  },
+  "rehabilitation": {
+    "title": "Camino de Rehabilitación",
+    "planBuilder": "Constructor de Planes",
+    "education": "Educación y Capacitación",
+    "mentalHealth": "Recursos de Salud Mental",
+    "substanceAbuse": "Programas de Abuso de Sustancias",
+    "communityService": "Horas de Servicio Comunitario",
+    "progress": "Tu Progreso",
+    "startPlan": "Comienza Tu Plan",
+    "addCourse": "Agregar Curso o Programa"
+  },
+  "innocence": {
+    "title": "Apoyo de Inocencia",
+    "evidenceLog": "Organizador de Evidencia",
+    "witnessStatements": "Declaraciones de Testigos",
+    "innocenceProjects": "Directorio de Proyectos de Inocencia",
+    "dnaTesting": "Recursos de Pruebas de ADN",
+    "appealPathway": "Constructor de Vía de Apelación",
+    "addEvidence": "Agregar Evidencia",
+    "addWitness": "Agregar Declaración de Testigo",
+    "contactProject": "Contactar un Proyecto de Inocencia"
+  },
+  "reentry": {
+    "title": "Apoyo de Reingreso",
+    "housing": "Recursos de Vivienda",
+    "employment": "Recursos de Empleo",
+    "idReplacement": "Reemplazo de ID y Documentos",
+    "benefits": "Inscripción de Beneficios",
+    "financialLiteracy": "Alfabetización Financiera",
+    "findHousing": "Buscar Vivienda Cerca de Ti",
+    "jobSearch": "Buscar Empleos",
+    "applyBenefits": "Solicitar Beneficios"
+  },
+  "community": {
+    "title": "Comunidad y Mentoría",
+    "forums": "Foros de Apoyo entre Pares",
+    "mentorMatching": "Emparejamiento de Mentores",
+    "familySupport": "Apoyo Familiar",
+    "counseling": "Directorio de Consejería",
+    "joinForum": "Unirse a un Foro",
+    "findMentor": "Buscar un Mentor",
+    "becomeMentor": "Convertirse en Mentor"
+  },
+  "settings": {
+    "title": "Configuración",
+    "language": "Idioma",
+    "languageDesc": "Elige tu idioma preferido",
+    "privacy": "Privacidad y Seguridad",
+    "notifications": "Notificaciones",
+    "account": "Cuenta",
+    "darkMode": "Modo Oscuro",
+    "exportData": "Exportar Mis Datos",
+    "deleteData": "Eliminar Mis Datos"
+  },
+  "common": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "add": "Agregar",
+    "search": "Buscar",
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "retry": "Intentar de Nuevo",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "submit": "Enviar",
+    "close": "Cerrar",
+    "yes": "Sí",
+    "no": "No",
+    "required": "Requerido",
+    "optional": "Opcional"
+  }
+}

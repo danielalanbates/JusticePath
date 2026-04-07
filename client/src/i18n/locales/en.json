@@ -1,0 +1,128 @@
+{
+  "app": {
+    "name": "JusticePath",
+    "tagline": "Rehabilitation & Innocence Support Platform",
+    "welcome": "Welcome to JusticePath",
+    "welcomeDesc": "Your guide through the justice system — whether you're working toward rehabilitation, proving innocence, or rebuilding after incarceration."
+  },
+  "nav": {
+    "home": "Home",
+    "caseTracker": "Case Tracker",
+    "legalSupport": "Legal Support",
+    "rehabilitation": "Rehabilitation",
+    "innocence": "Innocence Support",
+    "reentry": "Reentry Support",
+    "community": "Community",
+    "settings": "Settings"
+  },
+  "home": {
+    "getStarted": "Get Started",
+    "quickActions": "Quick Actions",
+    "checkCaseStatus": "Check Case Status",
+    "findLegalHelp": "Find Legal Help",
+    "startRehabPlan": "Start Rehab Plan",
+    "reportEvidence": "Report Evidence",
+    "findHousing": "Find Housing",
+    "joinCommunity": "Join Community"
+  },
+  "caseTracker": {
+    "title": "Case Tracker",
+    "status": "Case Status",
+    "nextCourtDate": "Next Court Date",
+    "documents": "Documents",
+    "timeline": "Timeline",
+    "addDocument": "Add Document",
+    "addReminder": "Add Reminder",
+    "noCases": "No cases tracked yet",
+    "addFirstCase": "Add your first case"
+  },
+  "legalSupport": {
+    "title": "Legal Support",
+    "askQuestion": "Ask a Legal Question",
+    "findLawyer": "Find a Lawyer",
+    "templates": "Document Templates",
+    "knowYourRights": "Know Your Rights",
+    "searchPlaceholder": "Describe your legal question...",
+    "categories": {
+      "appeals": "Appeals",
+      "expungement": "Expungement",
+      "sentencing": "Sentencing",
+      "probation": "Probation",
+      "parole": "Parole",
+      "civilRights": "Civil Rights"
+    }
+  },
+  "rehabilitation": {
+    "title": "Rehabilitation Pathway",
+    "planBuilder": "Plan Builder",
+    "education": "Education & Training",
+    "mentalHealth": "Mental Health Resources",
+    "substanceAbuse": "Substance Abuse Programs",
+    "communityService": "Community Service Hours",
+    "progress": "Your Progress",
+    "startPlan": "Start Your Plan",
+    "addCourse": "Add Course or Program"
+  },
+  "innocence": {
+    "title": "Innocence Support",
+    "evidenceLog": "Evidence Organizer",
+    "witnessStatements": "Witness Statements",
+    "innocenceProjects": "Innocence Project Directory",
+    "dnaTesting": "DNA Testing Resources",
+    "appealPathway": "Appeal Pathway Builder",
+    "addEvidence": "Add Evidence",
+    "addWitness": "Add Witness Statement",
+    "contactProject": "Contact an Innocence Project"
+  },
+  "reentry": {
+    "title": "Reentry Support",
+    "housing": "Housing Resources",
+    "employment": "Employment Resources",
+    "idReplacement": "ID & Document Replacement",
+    "benefits": "Benefits Enrollment",
+    "financialLiteracy": "Financial Literacy",
+    "findHousing": "Find Housing Near You",
+    "jobSearch": "Search for Jobs",
+    "applyBenefits": "Apply for Benefits"
+  },
+  "community": {
+    "title": "Community & Mentorship",
+    "forums": "Peer Support Forums",
+    "mentorMatching": "Mentor Matching",
+    "familySupport": "Family Support",
+    "counseling": "Counseling Directory",
+    "joinForum": "Join a Forum",
+    "findMentor": "Find a Mentor",
+    "becomeMentor": "Become a Mentor"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "languageDesc": "Choose your preferred language",
+    "privacy": "Privacy & Security",
+    "notifications": "Notifications",
+    "account": "Account",
+    "darkMode": "Dark Mode",
+    "exportData": "Export My Data",
+    "deleteData": "Delete My Data"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No",
+    "required": "Required",
+    "optional": "Optional"
+  }
+}

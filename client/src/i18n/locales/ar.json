@@ -1,0 +1,128 @@
+{
+  "app": {
+    "name": "JusticePath",
+    "tagline": "منصة إعادة التأهيل ودعم البراءة",
+    "welcome": "مرحباً بك في JusticePath",
+    "welcomeDesc": "دليلك عبر نظام العدالة — سواء كنت تعمل نحو إعادة التأهيل، أو تثبت البراءة، أو تعيد البناء بعد السجن."
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "caseTracker": "متابعة القضايا",
+    "legalSupport": "الدعم القانوني",
+    "rehabilitation": "إعادة التأهيل",
+    "innocence": "دعم البراءة",
+    "reentry": "دعم إعادة الاندماج",
+    "community": "المجتمع",
+    "settings": "الإعدادات"
+  },
+  "home": {
+    "getStarted": "ابدأ الآن",
+    "quickActions": "إجراءات سريعة",
+    "checkCaseStatus": "تحقق من حالة القضية",
+    "findLegalHelp": "ابحث عن مساعدة قانونية",
+    "startRehabPlan": "ابدأ خطة إعادة التأهيل",
+    "reportEvidence": "الإبلاغ عن دليل",
+    "findHousing": "ابحث عن سكن",
+    "joinCommunity": "انضم إلى المجتمع"
+  },
+  "caseTracker": {
+    "title": "متابعة القضايا",
+    "status": "حالة القضية",
+    "nextCourtDate": "موعد المحكمة القادم",
+    "documents": "المستندات",
+    "timeline": "الجدول الزمني",
+    "addDocument": "إضافة مستند",
+    "addReminder": "إضافة تذكير",
+    "noCases": "لا توجد قضايا متتبعة بعد",
+    "addFirstCase": "أضف قضيتك الأولى"
+  },
+  "legalSupport": {
+    "title": "الدعم القانوني",
+    "askQuestion": "اطرح سؤالاً قانونياً",
+    "findLawyer": "ابحث عن محامٍ",
+    "templates": "قوالب المستندات",
+    "knowYourRights": "اعرف حقوقك",
+    "searchPlaceholder": "صف سؤالك القانوني...",
+    "categories": {
+      "appeals": "الاستئناف",
+      "expungement": "محو السجل الجنائي",
+      "sentencing": "الحكم",
+      "probation": "المراقبة",
+      "parole": "الإفراج المشروط",
+      "civilRights": "الحقوق المدنية"
+    }
+  },
+  "rehabilitation": {
+    "title": "مسار إعادة التأهيل",
+    "planBuilder": "بناء الخطة",
+    "education": "التعليم والتدريب",
+    "mentalHealth": "موارد الصحة النفسية",
+    "substanceAbuse": "برامج إساءة استخدام المواد",
+    "communityService": "ساعات الخدمة المجتمعية",
+    "progress": "تقدمك",
+    "startPlan": "ابدأ خطتك",
+    "addCourse": "إضافة دورة أو برنامج"
+  },
+  "innocence": {
+    "title": "دعم البراءة",
+    "evidenceLog": "منظم الأدلة",
+    "witnessStatements": "أقوال الشهود",
+    "innocenceProjects": "دليل مشاريع البراءة",
+    "dnaTesting": "موارد فحص الحمض النووي",
+    "appealPathway": "بناء مسار الاستئناف",
+    "addEvidence": "إضافة دليل",
+    "addWitness": "إضافة قول شاهد",
+    "contactProject": "التواصل مع مشروع براءة"
+  },
+  "reentry": {
+    "title": "دعم إعادة الاندماج",
+    "housing": "موارد الإسكان",
+    "employment": "موارد التوظيف",
+    "idReplacement": "استبدال الهوية والمستندات",
+    "benefits": "التسجيل في المزايا",
+    "financialLiteracy": "الثقافة المالية",
+    "findHousing": "ابحث عن سكن بالقرب منك",
+    "jobSearch": "ابحث عن وظائف",
+    "applyBenefits": "التقدم بطلب للحصول على مزايا"
+  },
+  "community": {
+    "title": "المجتمع والإرشاد",
+    "forums": "منتديات الدعم من الأقران",
+    "mentorMatching": "تطابق المرشدين",
+    "familySupport": "دعم الأسرة",
+    "counseling": "دليل الإرشاد",
+    "joinForum": "انضم إلى منتدى",
+    "findMentor": "ابحث عن مرشد",
+    "becomeMentor": "كن مرشداً"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "language": "اللغة",
+    "languageDesc": "اختر لغتك المفضلة",
+    "privacy": "الخصوصية والأمان",
+    "notifications": "الإشعارات",
+    "account": "الحساب",
+    "darkMode": "الوضع الداكن",
+    "exportData": "تصدير بياناتي",
+    "deleteData": "حذف بياناتي"
+  },
+  "common": {
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "add": "إضافة",
+    "search": "بحث",
+    "loading": "جار التحميل...",
+    "error": "حدث خطأ ما",
+    "retry": "حاول مرة أخرى",
+    "back": "رجوع",
+    "next": "التالي",
+    "submit": "إرسال",
+    "close": "إغلاق",
+    "yes": "نعم",
+    "no": "لا",
+    "required": "مطلوب",
+    "optional": "اختياري"
+  }
+}
