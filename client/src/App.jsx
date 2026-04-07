@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { AuthProvider, useAuth } from './AuthContext'
 import Home from './pages/Home'
 import CaseTracker from './pages/CaseTracker'
 import LegalSupport from './pages/LegalSupport'
@@ -19,7 +20,18 @@ const languages = [
 ]
 
 function App() {
+  return (
+    <AuthProvider>
+      <BrowserRouter>
+        <AppContent />
+      </BrowserRouter>
+    </AuthProvider>
+  )
+}
+
+function AppContent() {
   const { t, i18n } = useTranslation()
+  const { user } = useAuth()
   const [menuOpen, setMenuOpen] = useState(false)
 
   const changeLanguage = (lng) => {
@@ -39,59 +51,58 @@ function App() {
   ]
 
   return (
-    <BrowserRouter>
-      <div className="app">
-        <header className="header">
-          <div className="header-content">
-            <NavLink to="/" className="logo">{t('app.name')}</NavLink>
-            <div className="header-actions">
-              <select
-                className="lang-select"
-                value={i18n.language}
-                onChange={(e) => changeLanguage(e.target.value)}
-              >
-                {languages.map((lang) => (
-                  <option key={lang.code} value={lang.code}>{lang.label}</option>
-                ))}
-              </select>
-              <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>☰</button>
-            </div>
-          </div>
-        </header>
-
-        <div className="layout">
-          <nav className={`sidebar ${menuOpen ? 'open' : ''}`}>
-            <ul className="sidebar-nav">
-              {navItems.map((item) => (
-                <li key={item.path}>
-                  <NavLink
-                    to={item.path}
-                    className={({ isActive }) => isActive ? 'active' : ''}
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    <span className="nav-icon">{item.icon}</span>
-                    {item.label}
-                  </NavLink>
-                </li>
+    <div className="app">
+      <header className="header">
+        <div className="header-content">
+          <NavLink to="/" className="logo">{t('app.name')}</NavLink>
+          <div className="header-actions">
+            {user && <span className="user-greeting">Hi, {user.first_name || user.email || user.phone}</span>}
+            <select
+              className="lang-select"
+              value={i18n.language}
+              onChange={(e) => changeLanguage(e.target.value)}
+            >
+              {languages.map((lang) => (
+                <option key={lang.code} value={lang.code}>{lang.label}</option>
               ))}
-            </ul>
-          </nav>
-
-          <main className="main-content">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/cases" element={<CaseTracker />} />
-              <Route path="/legal" element={<LegalSupport />} />
-              <Route path="/rehabilitation" element={<Rehabilitation />} />
-              <Route path="/innocence" element={<Innocence />} />
-              <Route path="/reentry" element={<Reentry />} />
-              <Route path="/community" element={<Community />} />
-              <Route path="/settings" element={<Settings />} />
-            </Routes>
-          </main>
+            </select>
+            <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>☰</button>
+          </div>
         </div>
+      </header>
+
+      <div className="layout">
+        <nav className={`sidebar ${menuOpen ? 'open' : ''}`}>
+          <ul className="sidebar-nav">
+            {navItems.map((item) => (
+              <li key={item.path}>
+                <NavLink
+                  to={item.path}
+                  className={({ isActive }) => isActive ? 'active' : ''}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  <span className="nav-icon">{item.icon}</span>
+                  {item.label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/cases" element={<CaseTracker />} />
+            <Route path="/legal" element={<LegalSupport />} />
+            <Route path="/rehabilitation" element={<Rehabilitation />} />
+            <Route path="/innocence" element={<Innocence />} />
+            <Route path="/reentry" element={<Reentry />} />
+            <Route path="/community" element={<Community />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </main>
       </div>
-    </BrowserRouter>
+    </div>
   )
 }
 

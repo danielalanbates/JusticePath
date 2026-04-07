@@ -34,7 +34,8 @@
     "addDocument": "Add Document",
     "addReminder": "Add Reminder",
     "noCases": "No cases tracked yet",
-    "addFirstCase": "Add your first case"
+    "addFirstCase": "Add your first case",
+    "caseNumber": "Case Number"
   },
   "legalSupport": {
     "title": "Legal Support",

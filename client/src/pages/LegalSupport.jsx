@@ -1,7 +1,18 @@
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import api from '../api'
 
 function LegalSupport() {
   const { t } = useTranslation()
+  const [query_text, setQueryText] = useState('')
+  const [lawyers, setLawyers] = useState([])
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    api.get('/resources', { params: { category: 'legal_aid' } })
+      .then(res => setLawyers(res.data.resources || []))
+      .catch(() => {})
+  }, [])
 
   const categories = [
     { icon: '📝', key: 'appeals' },
@@ -23,13 +34,15 @@ function LegalSupport() {
             type="text"
             className="form-input"
             placeholder={t('legalSupport.searchPlaceholder')}
+            value={query_text}
+            onChange={e => setQueryText(e.target.value)}
           />
         </div>
         <button className="btn btn-primary">{t('common.search')}</button>
       </div>
 
       <div className="card">
-        <h3 className="card-title" style={{ marginBottom: '1rem' }}>{t('legalSupport.categories')}</h3>
+        <h3 className="card-title" style={{ marginBottom: '1rem' }}>Legal Categories</h3>
         <div className="grid grid-3">
           {categories.map((cat) => (
             <div key={cat.key} className="feature-card">
@@ -40,22 +53,27 @@ function LegalSupport() {
         </div>
       </div>
 
-      <div className="grid grid-2">
-        <div className="card">
-          <h3 className="card-title">{t('legalSupport.findLawyer')}</h3>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem', margin: '0.75rem 0' }}>
-            Find public defenders, pro bono attorneys, and legal aid organizations near you.
-          </p>
-          <button className="btn btn-outline btn-sm">{t('legalSupport.findLawyer')}</button>
-        </div>
-
-        <div className="card">
-          <h3 className="card-title">{t('legalSupport.templates')}</h3>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem', margin: '0.75rem 0' }}>
-            Access document templates for motions, appeals, and expungement petitions.
-          </p>
-          <button className="btn btn-outline btn-sm">{t('legalSupport.templates')}</button>
-        </div>
+      <div className="card">
+        <h3 className="card-title" style={{ marginBottom: '1rem' }}>{t('legalSupport.findLawyer')}</h3>
+        <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem', marginBottom: '1rem' }}>
+          Find public defenders, pro bono attorneys, and legal aid organizations near you.
+        </p>
+        {lawyers.length === 0 ? (
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem' }}>Loading...</p>
+        ) : (
+          lawyers.map(l => (
+            <div key={l.id} className="list-item">
+              <div>
+                <strong>{l.title}</strong>
+                <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>{l.description.substring(0, 80)}...</div>
+                {l.phone && <div style={{ fontSize: '0.8125rem' }}>📞 {l.phone}</div>}
+              </div>
+              {l.website && (
+                <a href={l.website} target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-sm">Visit</a>
+              )}
+            </div>
+          ))
+        )}
       </div>
 
       <div className="card">
